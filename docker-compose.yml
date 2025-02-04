@@ -1,0 +1,12 @@
+services:
+  writefreely:
+    build: .
+    image: writefreely:latest
+    restart: unless-stopped
+    environment:
+      WRITEFREELY_PORT: 8080
+      WRITEFREELY_SITE_NAME: Example Blog
+      WRITEFREELY_HOST: http://localhost:8080/
+    volumes:
+      - ./keys:/writefreely/keys
+      - ./data:/data
