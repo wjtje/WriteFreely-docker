@@ -10,3 +10,5 @@ services:
     volumes:
       - ./keys:/writefreely/keys
       - ./data:/data
+    ports:
+      - 8080:8080

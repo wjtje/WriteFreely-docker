@@ -122,4 +122,6 @@ if [ -z "$( ls -A '/data' )" ]; then
     ./writefreely -c /tmp/writefreely.ini db init
 fi
 
+./writefreely -c /tmp/writefreely.ini db migrate
+
 ./writefreely -c /tmp/writefreely.ini
