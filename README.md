@@ -1,6 +1,6 @@
 # WriteFreely Docker
 
-> A minimal wrapper around [WriteFreely](https://writefreely.org/) to allow it 
+> A minimal wrapper around [WriteFreely](https://writefreely.org/) to allow it run inside a docker container
 
 ## Running the container
 
@@ -8,3 +8,8 @@
 2. Start the container
 3. Create a user using the following command `docker exec -it container-name ./writefreely -c /tmp/writefreely.ini user create --admin "username:password"`
 4. Profit?
+
+## License
+
+This repo is licensed under the AGPL, just like WriteFreely.
+
